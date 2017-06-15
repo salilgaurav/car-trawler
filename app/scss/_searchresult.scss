@@ -1,0 +1,330 @@
+#search-criteria__container {
+	background-color: $primary-color;
+	width: 100%; 
+}
+#search-results__container {
+	width: 100%;
+	max-width: 1024px;
+	min-width: 900px;
+	margin: 0 auto;
+}
+#search-results__filter {
+	width: 90%;  
+}
+
+/* -----------------------------------Filters--------------------------------------------------------------- */
+
+.search-results__filter-container {
+	padding: 1em;
+}
+.filters{
+	box-sizing: border-box;
+	padding: 5px 30px 30px;
+	width: 100%;
+	background-color: #FFF;
+	border: 1px solid #DBE3E7;
+	border-radius: 3px;
+	box-shadow: 0 1px 4px rgba(41,51,57,.5);
+	text-align: left;
+	color: #2B2E31;
+}
+
+.filters .filter-criteria{
+	display: block;
+	margin: 10px 0 10px;
+}
+
+.filters span{
+	font-size:14px;
+	display: block;
+	margin-bottom: 12px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.filters label{
+	display: block;
+	line-height: 1.4;
+	font-size: 15px;
+}
+
+.filters label input{
+	margin-right: 10px;
+}
+
+.filters button{
+	border-radius: 2px;
+	background-color:  #4BC34B;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+	border: 0;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+	cursor: pointer;
+
+	width: 95px;
+	height: 32px;
+	margin-top: 10px;
+}
+
+
+ /*-------------------------------------------------------------- car list-------------------------------------------------------*/
+ #search-results__sorts {
+ 	.search-results__sorts-title {
+ 		text-align: center;
+ 		padding: 5px;
+ 		position : relative;
+ 		.title {
+ 			background-color: #EBECED;
+ 			z-index: 1;
+ 			padding-left: 15px;
+ 			padding-right: 15px;
+ 		}
+ 		.strike {
+ 			position: absolute;
+ 			width: 100%;
+ 			border-top: 1px solid white;
+ 			left: 0;
+ 			top: 13px;
+ 			z-index: -1;
+ 		}
+ 	}
+ 	padding-top: 1em;
+ 	padding-right: 1em;
+ 	margin-bottom: 1em;
+ 	input {
+ 		width: 25%;
+ 		height: 40px;
+ 		background-color: white;
+ 		border-style: none;
+
+ 		&:not(:first-child) {
+ 			border-left: 1px solid #cdd0d2;
+ 		}
+ 		&:focus {
+ 			outline: none;
+ 			box-shadow: 0 1px 4px rgba(41,51,57,.5);
+ 		}
+ 	}
+ 	#price {
+ 		border-left: 2px solid $price-color; 
+ 	}
+ 	#person {
+ 		border-left: 2px solid $person-color; 
+ 	}
+ 	#baggage {
+ 		border-left: 2px solid $bag-color; 
+ 	}
+ 	#doors {
+ 		border-left: 2px solid $doors-color; 
+ 	}
+ }
+.price {
+	color: $price-color; 
+}
+.sort-btn.price.low,.sort-btn.price.high{
+	background-color: $price-color !important;
+	color: white;
+}
+.person {
+	color: $person-color; 
+}
+.sort-btn.person.low,.sort-btn.person.high{
+	background-color: $person-color !important;
+	color: white;
+}
+.baggage {
+	color: $bag-color; 
+}
+.sort-btn.baggage.low,.sort-btn.baggage.high {
+	background-color: $bag-color !important;
+	color: white;
+}
+.doors {
+	color: $doors-color; 
+}
+.sort-btn.doors.low,.sort-btn.doors.high {
+	background-color: $doors-color !important;
+	color: white;
+}
+input.low+span.icon {
+ 	position:relative; 
+ 	&:after{
+ 		content: '';
+	    position: absolute;
+	    display: inline-block;
+	    transform: rotate(45deg);
+	    -webkit-transform: rotate(45deg);
+	    border: solid white;
+	    border-width: 0 3px 3px 0;
+	    display: inline-block;
+	    padding: 5px;
+	    left: -20px;
+	    top: 0px;
+ 	}
+ }
+  input.high+span.icon {
+ 	position:relative; 
+ 	&:after{
+ 		content: '';
+	    position: absolute;
+	    display: inline-block;
+	    transform: rotate(-135deg);
+   		 -webkit-transform: rotate(-135deg);
+	    border: solid white;
+	    border-width: 0 3px 3px 0;
+	    display: inline-block;
+	    padding: 5px;
+	    left: -20px;
+	    top: 5px;
+ 	}
+ }
+ #search-results__list-container {
+ 	padding: 0 1em 1em 0;
+ }
+ .search-results__list-wrapper {
+ 	margin-bottom: 1em;
+ 	a {
+ 		text-decoration: none;
+ 		cursor: pointer;
+ 	}
+ }
+ .search-result__list-item {
+ 	border: 1px solid #DBE3E7;
+ 	box-shadow: 0 1px 4px rgba(41,51,57,.5);
+ 	padding: 10px;
+ 	background-color: white;
+ }
+ .car-img-grid {
+ 	width: 25%;
+ }
+ .car-description-grid {
+ 	width: 55%;
+ 	position: relative;
+ }
+ .car-price-grid {
+ 	width: 20%;
+ 	border-left: 1px solid #DBE3E7;
+ }
+ .car-img-wrapper {
+ 	padding: 1em 1em 1em 1em;
+ 	border: 1px solid #cdd0d2;
+ 	img {
+ 		width: 100%;
+ 		height: auto;
+ 	}
+ }
+ .car-details-wrapper {
+ 	padding: 0 1em;
+ }
+ .car-description {
+ 	width: 70%;
+ 	label {
+ 		font-size: 20px;
+ 		color: #37454d;
+ 		font-weight: bold;
+ 	}
+ }
+ .car-properties {
+ 	line-height: 0;
+ 	ul {
+ 		padding: 0;
+ 	}
+ 	li {
+ 		display: inline;
+ 		font-style: italic;
+ 		font-size: 12px;
+ 		text-decoration: none;
+ 		color: #37454d !important;
+ 	}
+ }
+ .car-provider {
+ 	position: absolute;
+ 	bottom: 0;
+ 	padding-left: 1em;
+ 	.text-label {
+ 		font-style: italic;
+ 		font-size: 12px;
+ 		color: #37454d !important;
+ 	}
+ 	.provider-text {
+ 		text-transform: uppercase;
+ 		font-size: 20px;
+ 		color: #37454d;
+ 		font-weight: bold;
+ 		padding-left: 5px;
+ 	}
+ }
+.car-price-wrapper {
+	display: table;
+    height: 100%;
+    width: 100%;
+}
+.car-price-container {
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.car-price-box {
+	label {
+		display: block;
+	}
+}
+.price-label {
+	color: #37454d !important;
+}
+.price-cost {
+	color: $price-color;
+	font-size: 2em;
+}
+.currency-code {
+	font-size: 0.3em;
+}
+ /*---------------------------------------------------Legend------------------------------------------------------------------------------*/
+ .legend-container {
+ 	max-width: 1024px;
+ 	min-width: 900px;
+ 	margin: 0 auto;
+ 	padding: 1em;
+ 	display: table;
+ 	width: 100%;
+ }
+ .pickup-point,.return-point {
+ 	width: 48%;
+ 	text-align: center;
+ 	border-bottom: 1px solid #DBE3E7;
+ 	box-shadow: 0 1px 4px rgba(41, 51, 57, 0.5);
+ 	position: relative;
+ 	height: 50px;
+ 	max-height: 50px;
+ 	min-height: 50px;
+ 	text-align: left;
+ 	border-left: 1px solid white;
+    padding-left: 10px;
+ 	label {
+ 		display: block;
+ 		color: #7D9ABA;
+ 	}
+ 	.place {
+	    max-height: 40px;
+	    font-size: 25px;
+	    display: inline-block;
+	    width: 60%;
+	    text-overflow: ellipsis;
+	    color: white;
+ 	}
+ 	.time {
+ 		display: inline-block;
+ 		width: 40%;
+ 		color: white;
+ 	}
+ }
+ .pickup-point {
+ 	margin-right: 1%;
+ 	
+ }
+ .return-point {
+ 	margin-left: 1%;
+ 	
+ }
+ 

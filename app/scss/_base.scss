@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+	background-color:#EBECED;
+	font-family: Arial,Helvetica,Sans,Sans-Serif,Sans Serif;
+	color: #37454d;
+}
+#main-container { 
+	height: 100%;
+	width: 100%; 
+	min-width: 900px;
+}
+.grid {
+	width: 100%;
+	display: flex;
+}
+.grid-one-fourth {
+	width: 25%;
+}
+.grid-three-fourth {
+	width: 75%;
+}

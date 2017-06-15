@@ -1,0 +1,34 @@
+.center-div{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 768px;
+  height: 50%; 
+  background-color: white;
+  border-radius: 3px;
+  .search-result__list-item {
+  	border: none;
+  	box-shadow: none;
+  }
+  .continue-btn-holder, .back-btn-holder {
+    text-align: center;
+  }
+  .continue-btn {
+    width: 70%;
+    padding: 0.5em;
+    background-color: $price-color;
+    color: white;
+    margin-bottom: 1em;
+    border: none;
+  }
+  .back-btn {
+    width: 35%;
+    padding: 0.5em;
+    background-color: $person-color;
+    color: white;
+    border: none;
+  }
+}
