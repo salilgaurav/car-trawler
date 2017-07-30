@@ -32,6 +32,6 @@ window.onload = function() {
 
     x.open('GET', url, true);
 
-    x.send();
+    x.send(); 
 
 };

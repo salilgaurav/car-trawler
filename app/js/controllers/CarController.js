@@ -1,4 +1,4 @@
-(function (exports) {
+(function (exports) { 
 	
 	exports.generateCarView = function (params) {
 		'use strict';
